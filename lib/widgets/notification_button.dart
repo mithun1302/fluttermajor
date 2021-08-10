@@ -52,7 +52,7 @@ class _NotificationButtonState extends State<NotificationButton> {
   Widget build(BuildContext context) {
     productProvider = Provider.of<ProductProvider>(context);
     return Badge(
-      position: BadgePosition(left: 25, top: 8),
+      position: BadgePosition(end: 25, top: 8),
       badgeContent: Text(
         productProvider.getNotificationIndex.toString(),
         style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold),
